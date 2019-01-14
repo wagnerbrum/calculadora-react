@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Button from './componentes/Button';
+import Led from './componentes/Led';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="calculadora">
+                <Led id="led" value={0} />
+                <Button value="7" label="7" />
+                <Button label="8" />
+                <Button label="9" />
+                <Button label="AC" /> 
+                <Button label="4" />
+                <Button label="5" />
+                <Button label="6" />
+                <Button label="+" />                
+                <Button label="1" />
+                <Button label="2" />
+                <Button label="3" />
+                <Button label="-" />
+                <Button label="0" />
+                <Button label="/" />
+                <Button label="." />
+                <Button label="*" />
+                <Button label="=" />
+                
+            </div>
+        );
+    }
 }
 
 export default App;

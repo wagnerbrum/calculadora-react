@@ -1,0 +1,24 @@
+button{
+    display: inline-block;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    border: 1px;
+    color: white;
+    background-color: #007bff;
+    transition: background-color .5s ease;
+}
+
+button:hover{
+    background-color: #0069d9;
+    cursor: pointer;
+}
+
+button:focus{
+    box-shadow: none;
+    border: 1px;
+    outline: 0;
+}
